@@ -18,3 +18,9 @@ print("A festő", painter_full_cost, "forintért festi ki Tibor szobáját.")
 print("A végösszeg az ÁFA hozzáadásával ennyi lesz:", all_costs_plus_afa ,"Ft.")
 
 
+
+
+
+
+
+
