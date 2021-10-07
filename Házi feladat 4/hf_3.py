@@ -1,0 +1,1 @@
+print("Nem tudtam megcsinalni.")
