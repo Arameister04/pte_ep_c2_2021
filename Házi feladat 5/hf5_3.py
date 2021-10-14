@@ -1,0 +1,2 @@
+number = int(input("Kérem adjon meg egy számot: "))
+print(f"A szám bináris alakja: {number:b}, az oktális alakja: {number:o}, a decimális alakja: {number:d}, a hexadecimális alakja: {number:x} és {number:X}")
