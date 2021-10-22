@@ -1,9 +1,18 @@
 from easygui import *
 
 
-msgbox("Hello There °-°!", title="Hello", ok_button="Hi")
+user_response = msgbox("Hello There °-°!", title="Hello", ok_button="Hi", image="python_logo.png")
+print(user_response)
+
+flavor = buttonbox("What is your favourite ice cream flavor?", title="Icecream", choices=['Vanilla', 'Chocolate', 'Strawberry', 'Cherry'], default_choice="Vanilla")
+msgbox("You picked " + flavor)
 
 
-flavour = buttonbox("What is your favourite ice cream flavor?", title="Icecream", choices=['Vanilla[1]', 'Chocolate[2]', 'Strawberry[3]'], default_choice="Vanilla[1]")
+flavor = choicebox("What is your favourite ice cream flavor?", title="Icecream2", choices=['Vanilla', 'Chocolate', 'Strawberry', 'Cherry'], preselect=1)
+msgbox("You picked " + flavor)
 
-msgbox("You picked " + flavour)
+flavor = enterbox("What is your favourite ice cream flavor?", title="Icecream3", default="körte", image="python_logo.png")
+if flavor is not None:
+    msgbox("You picked " + flavor)
+else:
+    print("Cancel gombra nyomott a felhasználó.")
