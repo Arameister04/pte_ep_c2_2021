@@ -18,7 +18,7 @@ try:
             easygui.msgbox("Gratulálunk nyertél " + str(tries) + " próbálkozásból!", title="Gratulálunk")
         tries += 1
         if tries == 7:
-            easygui.msgbox("Sajnálom vesztettél a keresett érték: " + str(bot_number) + "volt.", title="Lejárt a 6 próbálkozás")
+            easygui.msgbox("Sajnálom vesztettél a keresett érték: " + str(bot_number) + " volt.", title="Lejárt a 6 próbálkozás")
 except ValueError:
     easygui.msgbox("Nem megfelelő érték.", title="Hibás")
 
